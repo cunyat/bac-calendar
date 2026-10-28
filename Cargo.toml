@@ -1,0 +1,21 @@
+[package]
+name = "bac-calendar"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Syncs a basketball team's FCBQ matches into its Google Calendar"
+license = "MIT"
+publish = false
+
+[dependencies]
+anyhow = "1"
+base64 = "0.22"
+chrono = { version = "0.4", default-features = false, features = ["std", "clock"] }
+chrono-tz = "0.10"
+percent-encoding = "2"
+ring = "0.17"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+toml = "1"
+ureq = { version = "3", features = ["json"] }
